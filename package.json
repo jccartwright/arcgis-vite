@@ -5,7 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "copy": "ncp ./node_modules/@arcgis/core/assets ./assets"
+    "copy": "ncp ./node_modules/@arcgis/core/assets ./assets",
+    "postinstall": "npm run copy"
   },
   "devDependencies": {
     "ncp": "^2.0.0",
